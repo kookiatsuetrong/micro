@@ -1,0 +1,23 @@
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="main">
+		<provider>
+			org.hibernate.jpa.HibernatePersistenceProvider
+		</provider>
+		<properties>
+
+		<property name="javax.persistence.jdbc.url"
+			value="jdbc:mysql://localhost/tesla" />
+		<property name="javax.persistence.jdbc.user"
+			value="elon" />
+		<property name="javax.persistence.jdbc.password"
+			value="musk" />
+		<property name="javax.persistence.jdbc.driver"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name=
+			"javax.persistence.schema-generation.database.action"
+			value="create" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
